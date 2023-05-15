@@ -3,25 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-clr: #124680;
+  --secondary-clr: #3f9fe8;
+  --accent-clr: #94eb00;
+  --heading-font: "Archivo Black";
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Lora", serif;
+  /* color:#124680 */
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--primary-clr);
 }
